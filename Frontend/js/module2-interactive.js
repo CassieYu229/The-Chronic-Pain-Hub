@@ -14,7 +14,7 @@ const PAIN_TYPES = {
     name: 'Burning',
     label: 'Burning sensation',
     color: '#005EB8',
-    icon: '/Backend/images/burning.gif',
+    icon: '/images/burning.gif',
     staticIcon: '🔥',
     neuropathic: true
   },
@@ -22,7 +22,7 @@ const PAIN_TYPES = {
     name: 'Aching',
     label: 'Aching pain',
     color: '#F1C40F',
-    icon: '/Backend/images/dull.jpg',
+    icon: '/images/dull.jpg',
     staticIcon: '💪',
     neuropathic: false
   },
@@ -30,7 +30,7 @@ const PAIN_TYPES = {
     name: 'Stabbing',
     label: 'Stabbing pain',
     color: '#E74C3C',
-    icon: '/Backend/images/sharp.gif',
+    icon: '/images/sharp.gif',
     staticIcon: '⚡',
     neuropathic: true
   },
@@ -38,7 +38,7 @@ const PAIN_TYPES = {
     name: 'Tingling',
     label: 'Tingling sensation',
     color: '#27AE60',
-    icon: '/Backend/images/Tingling.jpg',
+    icon: '/images/Tingling.jpg',
     staticIcon: '✨',
     neuropathic: true
   },
@@ -46,7 +46,7 @@ const PAIN_TYPES = {
     name: 'Pulsing',
     label: 'Pulsing sensation',
     color: '#9B59B6',
-    icon: '/Backend/images/pulsing.gif',
+    icon: '/images/pulsing.gif',
     staticIcon: '💓',
     neuropathic: false
   },
@@ -54,7 +54,7 @@ const PAIN_TYPES = {
     name: 'Radiating',
     label: 'Radiating pain',
     color: '#E67E22',
-    icon: '/Backend/images/radiating.gif',
+    icon: '/images/radiating.gif',
     staticIcon: '📡',
     neuropathic: true
   },

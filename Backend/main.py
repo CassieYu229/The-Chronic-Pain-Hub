@@ -61,8 +61,8 @@ async def add_no_cache_headers(request: Request, call_next):
 # Get parent directory (root of the project)
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-# Mount Backend images directory
-app.mount("/images", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "images")), name="images")
+# Note: Backend/images/ contains pain type reference images (sharp.png, burning.gif, etc.)
+# These are served through the main StaticFiles mount at the end of this file
 
 # Health check endpoint
 @app.get("/health")
@@ -346,9 +346,9 @@ async def getPainTypes():
         }
 
 
-# Mount static files from root directory (CSS, JS, images, etc.)
+# Mount static files from Frontend directory (CSS, JS, images, HTML)
 # This must be at the end, after all specific routes are defined
-app.mount("/", StaticFiles(directory=parent_dir, html=True), name="static")
+app.mount("/", StaticFiles(directory=os.path.join(parent_dir, "Frontend"), html=True), name="static")
     
 @app.on_event("startup")
 async def startup_event():
